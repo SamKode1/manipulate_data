@@ -13,9 +13,10 @@ def read_csv(path):
 
       for row in reader:
          in_pairs = zip(header,row)
-         convert_dict = dict(in_pairs)
+         convert_dict = {key: value for key, value in in_pairs}
          final_data.append(convert_dict)
       return final_data
    
-   if __name__=="__main__":
-      read_csv("/home/samkodde/curso_comprehension_python/final_challenge/world_population.csv")
+if __name__=="__main__":
+   read_csv("/home/samkodde/curso_comprehension_python/final_challenge/world_population.csv")
+   

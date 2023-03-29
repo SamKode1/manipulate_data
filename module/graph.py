@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 
 def create_bar_chart(labels,values):
    fig, ax = plt.subplots()
-   fig.set_facecolor("black")
    ax.bar(labels,values)
    plt.show()
 
